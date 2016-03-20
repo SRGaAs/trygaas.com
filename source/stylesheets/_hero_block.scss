@@ -1,0 +1,49 @@
+.hero-section {
+  background:
+    image-url('pattern_left@2x.png')  no-repeat left  center,
+    image-url('pattern_right@2x.png') no-repeat right center;
+  background-size: contain;
+  background-color: $greensea;
+  color: white;
+  text-align: center;
+  padding: 90px 0;
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  .site-title {
+    margin-bottom: -60px;
+  }
+}
+.hero-title-expanded {
+  color: $yellow;
+}
+
+.hero-actions {
+  margin-top: 45px;
+}
+.hero-action-button {
+  background-color: $yellow;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow:
+    inset 0  1px 0   transparentize(white, .5),
+    inset 0 -1px 1px transparentize(black, .85);
+
+  padding: 0.6em 2em 0.5em;
+  border-radius: 5px;
+
+  &:hover, &:focus {
+    background-color: darken($yellow, 5%);
+  }
+  &:active {
+    background-color: desaturate( darken($yellow, 10%), 10%);
+    box-shadow: inset 0 2px 2px 1px transparentize(black, .65);
+  }
+}
