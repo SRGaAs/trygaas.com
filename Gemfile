@@ -11,3 +11,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+gem 'middleman-autoprefixer', '~> 2.6'
+
+# Replace Ruby Sass with LibSass
+gem 'sassc', '~> 1.8'
