@@ -22,7 +22,12 @@
   background-position: center top;
   background-size: cover;
   color: $ivory;
+  font-size: 15px;
   flex: 1 1 50%;
+
+  @media (min-width: 960px) {
+    font-size: 18px;
+  }
 
   &.step-1 {
     background-image: image-url('step1@2x.jpg');
@@ -39,52 +44,53 @@
 }
 
 .hiw-step-desc {
+  margin: relative(30px, 18px);
   margin-bottom: 15%;
 }
 
 .hiw-step-title {
   background-color: $yellow;
   color: inherit;
-  font-size: 20px;
-  line-height: 1;
+  font-size: relative(20px, 18px);
+  line-height: relative(32px, 20px);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
   position: relative;
-  padding: 6px 20px;
-  padding-left: 43px;
+  padding: 0 1em;
+  padding-left: relative(43px, 20px);
   margin: 60% 0 0;
 
   &::before {
     counter-increment: hiw-step;
     content: counter(hiw-step);
-    width: 40px;
+    width: relative(40px, 26px);
     background-color: $greensea;
-    font-size: 26px;
+    font-size: relative(26px, 20px);
     font-weight: 600;
-    line-height: 40px;
+    line-height: relative(40px, 26px);
     display: block;
     position: absolute;
     border: 3px solid $ivory;
     border-radius: 50%;
     top: 50%;
     left: 0;
-    margin-top: -23px;
-    margin-left: -23px;
+    margin-top: relative(-23px, 26px);
+    margin-left: relative(-23px, 26px);
   }
 
   &::after {
     content: '';
     width: 0;
     height: 0;
-    border-width: 16px 8px;
+    border-width: relative(16px, 20px) relative(8px, 20px);
     border-color: $yellow transparent;
     border-style: solid;
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: -8px;
+    margin-right: relative(-7px, 20px);
   }
 }
 

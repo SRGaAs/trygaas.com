@@ -5,6 +5,10 @@ $greensea: #01b5b6;
 $ivory: #faf6ea;
 $yellow: #f4c36c;
 
+@function relative($size, $base: 16px, $unit: 1em) {
+  @return ($size / $base) * $unit;
+}
+
 @import "hero_block";
 @import "how_it_works";
 
