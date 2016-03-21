@@ -4,6 +4,7 @@
 $greensea: #01b5b6;
 $ivory: #faf6ea;
 $yellow: #f4c36c;
+$brown: #d4ae80;
 
 @function relative($size, $base: 16px, $unit: 1em) {
   @return ($size / $base) * $unit;
@@ -12,6 +13,7 @@ $yellow: #f4c36c;
 @import "hero_block";
 @import "how_it_works";
 @import "why_gaas";
+@import "features";
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
