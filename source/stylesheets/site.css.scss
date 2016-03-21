@@ -6,6 +6,15 @@ $ivory: #faf6ea;
 $yellow: #f4c36c;
 
 @import "hero_block";
+@import "how_it_works";
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
 
 .sr-only {
   position: absolute;
