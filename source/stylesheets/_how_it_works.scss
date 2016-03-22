@@ -5,7 +5,7 @@
 
   .section-title {
     margin: 0;
-    padding: 50px 0;
+    padding: 50px 15px;
   }
 
   .hiw-steps-group {
@@ -23,7 +23,11 @@
   background-size: cover;
   color: $ivory;
   font-size: 15px;
-  flex: 1 1 50%;
+  flex: 1 1 auto;
+
+  @media (min-width: 720px) {
+    flex-basis: 50%;
+  }
 
   @media (min-width: 960px) {
     font-size: 18px;
@@ -49,6 +53,7 @@
 }
 
 .hiw-step-title {
+  height: relative(32px, 20px);
   background-color: $yellow;
   color: inherit;
   font-size: relative(20px, 18px);
